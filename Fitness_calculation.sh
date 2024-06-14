@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#Mapping reads to the WT reference sequence(150bp target sequence with 6-bp wildtype sequence at each of two ends)
+#Mapping reads to the WT reference sequence(150bp target sequence with 6-bp wildtype sequence at each of two ends). I took ADA2 analysis as an example and the rest 20 genes were analyzed in the same way.
 bwa mem -t 4 ./ADA2.fasta ./ADA2-t0_R1_001.fastq.gz ./ADA2-t0_R2_001.fastq.gz > ADA2_t0.sam
 
 #Read1 and read2 encode the same mutations and they are fully mapped to the 162bp reference sequence.
